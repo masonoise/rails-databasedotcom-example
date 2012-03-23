@@ -1,0 +1,19 @@
+<h1>Create user</h1>
+
+<%= form_for @user do |f| %>
+    <div class="field">
+        <%= f.label :Name %><br />
+        <%= f.text_field :Name %>
+    </div>
+    <div class="field">
+        <%= f.label :CompanyName %><br />
+        <%= f.text_field :CompanyName %>
+    </div>
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+<% end %>
+
+<br/>
+
+<%= link_to 'Back', users_path %>

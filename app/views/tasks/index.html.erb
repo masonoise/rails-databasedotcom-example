@@ -1,0 +1,13 @@
+<h1>Tasks</h1>
+
+<% if flash[:notice] %>
+  <%= flash[:notice] %><br/><br/>
+<% end %>
+
+<%=  link_to "Add New Task", new_task_path %>
+<br/>
+<br/>
+
+<% @tasks.each do |task| %>
+  <%= link_to "#{task.Subject}", task %><br/>
+<% end %>

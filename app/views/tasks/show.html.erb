@@ -1,0 +1,14 @@
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+
+<h1>Task <%= @task.Subject %></h1>
+
+<%= link_to 'Back', tasks_path %> | <%= link_to 'Delete', @task, :confirm => 'Are You Sure?', :method => :delete %>
+<br/>
+<br/>
+
+<% @task.attributes.each do |a| %>
+    <%= a[0] %>: <%= a[1] %><br/>
+<% end %>
+

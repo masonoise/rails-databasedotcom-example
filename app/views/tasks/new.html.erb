@@ -1,0 +1,23 @@
+<h1>Create task</h1>
+
+<% if flash[:notice] %>
+  <%= flash[:notice] %><br/><br/>
+<% end %>
+
+<%= form_for @task do |f| %>
+    <div class="field">
+        <%= f.label :Subject %><br />
+        <%= f.text_field :Subject %>
+    </div>
+    <div class="field">
+        <%= f.label "Status" %>
+        <%= f.select :Status, options_for_select([['Not Started', 'Not Started'], ['In Progress', 'In Progress'], ['Completed','Completed']]) %>
+    </div>
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+<% end %>
+
+<br/>
+
+<%= link_to 'Back', tasks_path %>

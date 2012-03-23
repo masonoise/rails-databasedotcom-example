@@ -1,0 +1,2 @@
+Simple example Rails app using the databasedotcom gem and the databasedotcom-rails gem. Allows browsing and editing Users, and Tasks.
+

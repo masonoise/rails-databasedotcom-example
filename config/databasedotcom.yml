@@ -1,0 +1,7 @@
+host: login.salesforce.com
+client_secret: secrethere
+client_id: clientidgoeshere
+#sobject_module: SFDC_Models
+debugging: true
+username: someone@example.com
+password: passwordhere
